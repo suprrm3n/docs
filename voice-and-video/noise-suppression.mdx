@@ -1,0 +1,120 @@
+---
+title: "Noise Suppression"
+description: "How Tavrn's noise suppression works and what to do if it's filtering too much (or not enough)."
+icon: "mic-off"
+---
+
+# Noise Suppression
+
+Nobody wants to hear someone's mechanical keyboard in a voice call. Tavrn has noise suppression built in to handle exactly that.
+
+---
+
+## What is Noise Suppression?
+
+Noise suppression is an audio processing feature that filters background sounds out of your microphone feed, things like:
+
+- 🎹 Keyboard clicks
+- 💨 Fan or HVAC noise
+- 🐶 Pets (sorry, fluffy)
+- 🎵 Background music
+- 🚗 Street noise
+- 📺 TV or ambient audio
+
+The idea is that other people in the call hear *you*, clearly, without a bunch of ambient junk layered on top.
+
+---
+
+## How It Works
+
+Tavrn applies noise suppression at the audio processing level before your microphone audio is sent to other participants. It uses algorithms to distinguish between:
+
+- **Speech** (consistent patterns of human voice) → kept
+- **Background noise** (irregular, non-speech patterns) → reduced or removed
+
+The result is a cleaner audio feed in real time.
+
+---
+
+## Is Noise Suppression Always On?
+
+Noise suppression is **enabled by default** in all Tavrn calls. You don't have to do anything to turn it on.
+
+---
+
+## When Noise Suppression Gets Too Aggressive
+
+Occasionally, noise suppression can over-filter and start cutting out parts of your voice, especially if:
+
+- You speak softly
+- You're using a low-quality microphone
+- You have an unusual vocal quality
+- You're playing music through your mic intentionally
+
+If people keep saying you "cut out" or your voice sounds robotic or choppy, noise suppression may be the culprit.
+
+<Tip>
+  If your voice sounds robotic or like it's cutting in and out, noise suppression is usually the first thing to investigate. It can be very aggressive with some microphone/voice combinations.
+</Tip>
+
+---
+
+## When Noise Suppression Doesn't Seem to Help
+
+The flip side, if background noise is still bleeding through despite suppression:
+
+- Your microphone might be picking up more ambient sound than suppression can handle
+- The noise might be very close to human speech frequencies (like a TV nearby)
+- Your microphone gain might be set too high
+
+In these cases:
+- Move your microphone closer to your mouth
+- Lower your microphone gain in your system settings
+- Use a directional (cardioid) microphone rather than an omnidirectional one
+- Use headphones with a built-in mic instead of desktop speakers + a room mic
+
+---
+
+## Microphone Best Practices
+
+Noise suppression is a great tool, but a good mic setup beats it every time:
+
+| Setup | Audio Quality | Noise Suppression Needed |
+|---|---|---|
+| Phone earbuds | Decent | Medium |
+| Webcam microphone | Fair | High |
+| Headset with boom mic | Good | Low |
+| USB condenser mic | Excellent | Low–Medium |
+| XLR mic + audio interface | Professional | Minimal |
+
+You don't need professional equipment to have good audio on Tavrn. A simple gaming headset with a boom mic makes a huge difference over a laptop microphone.
+
+---
+
+## Echo Cancellation
+
+Closely related to noise suppression, **echo cancellation** prevents your speakers' output from looping back into your microphone, the effect that causes that horrible feedback sound.
+
+Echo cancellation is also enabled by default in Tavrn calls. If you're experiencing echo (others hearing themselves repeated back), check:
+
+- Are you using speakers instead of headphones? Headphones are the most reliable echo fix.
+- Is your microphone volume set very high while your speakers are also loud?
+
+---
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion title="Can I turn off noise suppression?">
+    There isn't currently a per-user toggle for noise suppression within Tavrn's UI. If you need to broadcast system audio or music, use the screen share audio option or a virtual audio cable setup rather than your regular mic.
+  </Accordion>
+  <Accordion title="My voice sounds robotic to others, what's happening?">
+    This is almost certainly noise suppression over-processing your audio. It usually happens with soft speech or lower quality microphones. Try speaking slightly louder and more clearly, or increasing your microphone gain slightly.
+  </Accordion>
+  <Accordion title="I can hear a lot of background noise from someone else in my call">
+    Their noise suppression is either not working well for their setup, or their microphone is picking up a lot of ambient sound. You can gently let them know, they may not realize how much background noise is coming through.
+  </Accordion>
+  <Accordion title="Does noise suppression use a lot of CPU?">
+    The audio processing is lightweight and handled at the browser level. On modern computers, you shouldn't notice any performance impact. On very old or underpowered devices, there might be minimal additional load.
+  </Accordion>
+</AccordionGroup>

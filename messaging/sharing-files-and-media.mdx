@@ -1,0 +1,141 @@
+---
+title: "Sharing Files & Media"
+description: "How to share images and audio files in Tavrn chats."
+icon: "paperclip"
+---
+
+# Sharing Files & Media
+
+Tavrn supports image and audio sharing in all chats, drop a photo, share a voice memo, send a screenshot. Here's everything you need to know.
+
+---
+
+## Supported File Types
+
+<CardGroup cols={2}>
+  <Card title="🖼️ Images" icon="image">
+    JPEG, PNG, WebP, GIF, AVIF  
+    **Max size: 25MB**
+  </Card>
+  <Card title="🎵 Audio" icon="music">
+    MP3, WAV, OGG, FLAC, AAC, M4A, WebM  
+    **Max size: 50MB**
+  </Card>
+</CardGroup>
+
+<Info>
+  **Cocoa members** get higher quality image uploads and larger file size allowances. [Learn about Cocoa →](/cocoa-premium/what-is-cocoa)
+</Info>
+
+---
+
+## How to Send a File
+
+<Tabs>
+  <Tab title="Click to Upload">
+    1. Click the **📎 attachment icon** in the message toolbar
+    2. A file picker opens, select your file(s)
+    3. Add an optional message caption
+    4. Click **Send**
+  </Tab>
+  <Tab title="Drag & Drop">
+    Drag any file directly onto the chat window, a drop zone will appear. Release to start the upload.
+
+    You can drag multiple files at once to send them together.
+  </Tab>
+  <Tab title="Paste">
+    Copy an image to your clipboard (right-click → Copy Image, or take a screenshot), then paste it directly into the message input with **Ctrl+V** (or **Cmd+V** on Mac).
+  </Tab>
+</Tabs>
+
+---
+
+## Upload Progress
+
+When you're uploading a large file, you'll see a progress indicator so you know how it's going. Tavrn tracks each file separately if you're uploading multiple at once.
+
+If an upload fails partway through, Tavrn will automatically retry it a few times with exponential backoff (meaning it waits a little longer each time before retrying, to avoid hammering a struggling connection).
+
+---
+
+## How Media Displays in Chat
+
+**Images** appear as inline previews, click any image to open it in the **lightbox**, a fullscreen viewer. In the lightbox you can:
+- Navigate between multiple images with the arrow keys or on-screen arrows
+- Close with `Esc` or clicking outside
+
+**Audio files** get a custom audio player with a play button, scrubber, and duration display.
+
+---
+
+## The Media Gallery
+
+Every conversation has a **media gallery** that shows all the files that have been shared between you and another person (or in a room channel). It's great for finding that photo someone sent three weeks ago.
+
+To open the gallery:
+1. In a DM, click the **Gallery** or **Media** icon in the top-right of the chat
+2. Browse by type (Images, Audio) or search by filename
+3. Filter by date or conversation
+
+<Tip>
+  The gallery paginates lazily as you scroll, it loads more as you go, so even a year of shared media won't slow it down.
+</Tip>
+
+---
+
+## Image Optimization
+
+Tavrn automatically optimizes images when you upload them:
+
+- **WebP conversion**, Images are converted to WebP format for smaller file sizes with no visible quality loss (with fallback for older browsers)
+- **Dimension extraction**, Image dimensions are stored so previews can be accurately sized before loading
+- **EXIF data stripping**, Any metadata embedded in your photos (including GPS location data!) is automatically removed before the image is stored
+
+<Warning>
+  EXIF stripping means that sensitive metadata like your location won't be exposed in shared photos. This happens automatically, you don't need to do anything.
+</Warning>
+
+---
+
+## Downloading Shared Files
+
+To download a file someone shared:
+1. Hover over the image or file in chat
+2. Click the **Download** icon (or right-click → Save Image/Save File on images)
+
+---
+
+## File Privacy
+
+Files you share in DMs are only accessible to you and the person you're chatting with. Files shared in room channels are accessible to all members of that channel.
+
+Uploaded files are stored in secure Supabase storage buckets. They're not publicly searchable or indexable.
+
+---
+
+## File Size Limits & What To Do If You're Over
+
+If your file is too large:
+
+- **Compress the image**, Use a tool like Squoosh (free, in-browser) to reduce image size
+- **For audio**, Try re-exporting as MP3 at a lower bitrate if FLAC or WAV is too big
+- **Use an external host**, Upload to Google Drive, Dropbox, or Imgur and share the link. Tavrn will auto-generate a link preview.
+
+---
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion title="Can I delete a file I uploaded?">
+    Yes, delete the message that contains the file. This removes both the message and the uploaded attachment from Tavrn's storage.
+  </Accordion>
+  <Accordion title="Can I upload multiple files at once?">
+    Yes! You can select multiple files in the file picker or drag multiple files at once. They'll all queue up and upload together.
+  </Accordion>
+  <Accordion title="Are GIF files supported?">
+    Yes, GIF image files can be uploaded as attachments (up to 25MB). But for sending GIFs from the internet, the GIF picker is way more convenient. See [Using GIFs](/messaging/using-gifs).
+  </Accordion>
+  <Accordion title="Why did my upload fail?">
+    Usually due to the file being too large, an unsupported file type, or a network issue. Check the file type and size against the limits above. If everything looks right and it's still failing, try again, Tavrn will retry automatically in most cases.
+  </Accordion>
+</AccordionGroup>

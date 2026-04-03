@@ -1,0 +1,110 @@
+---
+title: "Link Safety & Suspicious Links"
+description: "How Tavrn protects you from malicious links, and what to do when you see a warning."
+icon: "alert-triangle"
+---
+
+# Link Safety & Suspicious Links
+
+Links shared in chat can be helpful or harmful. Tavrn has several layers of protection to help you navigate them safely.
+
+---
+
+## Automatic Link Safety Checks
+
+When someone shares a link in Tavrn, the platform automatically checks it against safety databases before showing it to you. This happens in the background, you usually won't even notice it unless something is flagged.
+
+**What's checked:**
+- 🦠 **Malware**, Links to sites that distribute viruses or malicious software
+- 🎣 **Phishing / Social Engineering**, Sites designed to steal login credentials or personal information
+- 💩 **Unwanted Software**, Links to sites that push sketchy downloads or adware
+
+---
+
+## The Warning Popup
+
+If you click a link that's been flagged as potentially dangerous, you'll see a **warning modal** before you're redirected. It'll tell you:
+
+- The URL you're about to visit
+- Why it was flagged (malware, phishing, etc.)
+- Options to **go back** (safe choice) or **proceed anyway** (not recommended)
+
+<Warning>
+  If you see this warning, take it seriously. The system isn't perfect and false positives exist, but most flagged links are flagged for real reasons. If you're unsure, don't visit the site.
+</Warning>
+
+---
+
+## Link Previews
+
+When a clean link is shared, Tavrn generates an automatic **link preview card** showing:
+- The page title
+- A short description
+- A preview image (if available)
+- The domain name
+
+This helps you understand what a link is before clicking it, no more mystery URLs.
+
+**Special previews:**
+- Tavrn room invite links get a custom invite card showing the room name, icon, and member count
+- Image URLs display the image inline
+- Social media links may preview with rich metadata
+
+---
+
+## Links That Don't Get Previews
+
+Tavrn doesn't generate previews for certain types of links:
+- **URL shorteners** (bit.ly, tinyurl, t.co, etc.), Because the final destination is hidden and harder to trust
+- **Links to private/paywalled content**, Can't fetch preview data without auth
+- **Very new domains**, May not yet have metadata to preview
+
+<Note>
+  The absence of a preview doesn't mean a link is dangerous, it just means Tavrn couldn't (or chose not to) generate one.
+</Note>
+
+---
+
+## What To Do If You Receive a Suspicious Link
+
+1. **Don't click it**, If something feels off, trust that instinct
+2. **Look at the domain carefully**, Phishing links often have near-lookalike domains (like `tavrn-login.net` instead of `tavrn.app`)
+3. **Check the context**, A link from a stranger with no message context is a red flag
+4. **Report the message**, Flag it for the moderation team using the report function
+5. **Block the sender** if needed
+
+---
+
+## Tavrn Will Never Ask You to Log In Via a Link
+
+Tavrn staff will never send you a DM or message asking you to click a link to "verify your account," "prevent suspension," or "claim a prize." These are phishing attempts, report and block.
+
+If you need to do anything with your account, navigate to Tavrn directly by typing the URL yourself.
+
+---
+
+## False Positives
+
+The safety check system isn't perfect. Occasionally, a legitimate link might get flagged:
+
+- A small personal website that happens to share infrastructure with a known-bad domain
+- A brand new domain that hasn't been verified as safe yet
+- A link to content that's hosted in a way that triggers false signals
+
+If you're confident a link is safe and it's being blocked, you can proceed through the warning at your own risk, just be certain. You can also report false positives to Tavrn if you're a room owner experiencing this issue with your community's shared links.
+
+---
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion title="Does Tavrn store the links I share?">
+    Link previews are cached briefly (for a few minutes) to avoid redundant fetch requests. Links themselves are stored as part of message content, the same as any other message.
+  </Accordion>
+  <Accordion title="Can I disable link previews?">
+    There isn't currently a per-user toggle to disable link previews. If you paste a link and don't want a preview, one workaround is to wrap the URL in backticks (code formatting), some users do this to share links without triggering the preview.
+  </Accordion>
+  <Accordion title="Why isn't a link I clicked safe-browsing checked?">
+    Tavrn whitelists certain trusted domains (like its own URLs and trusted infrastructure) to avoid checking them every time. Most external links do get checked.
+  </Accordion>
+</AccordionGroup>

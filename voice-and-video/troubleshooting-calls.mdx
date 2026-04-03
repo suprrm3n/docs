@@ -1,0 +1,138 @@
+---
+title: "Troubleshooting Calls"
+description: "Solutions for the most common voice and video call issues on Tavrn."
+icon: "wrench"
+---
+
+# Troubleshooting Calls
+
+Call not working? Audio sounding weird? Can't be seen on camera? Let's fix it.
+
+---
+
+## Quick Checklist
+
+Before diving into specifics, run through this list:
+
+<Steps>
+  <Step title="Check your browser permissions">
+    Your browser must have permission to access your microphone and camera. Click the 🔒 lock icon in the address bar and confirm both are allowed.
+  </Step>
+  <Step title="Check if another app is using your mic or camera">
+    Zoom, Teams, Skype, or other apps can "lock" your audio/video hardware. Close those apps first.
+  </Step>
+  <Step title="Refresh the page">
+    Sounds basic, but it solves a lot. If you just granted browser permissions, you definitely need to refresh.
+  </Step>
+  <Step title="Try a different browser">
+    Chrome and Edge tend to have the best WebRTC support. Firefox works too. Safari is more limited.
+  </Step>
+  <Step title="Check your internet connection">
+    Voice calls need a stable internet connection. Test your connection at fast.com or similar.
+  </Step>
+</Steps>
+
+---
+
+## Common Problems & Solutions
+
+<AccordionGroup>
+  <Accordion title="🚫 No audio, nobody can hear me">
+    **Most likely cause:** Microphone not permitted, wrong input device selected, or you're muted.
+
+    **Try:**
+    1. Check that you're not muted (the mute button in the call bar)
+    2. Check browser permissions, microphone must be set to **Allow**
+    3. Open your OS sound settings and verify the correct microphone is selected as default
+    4. Try speaking louder, some mics have a volume threshold below which they don't pick up
+    5. Check physical mute switches on headsets or external mics
+  </Accordion>
+  <Accordion title="🔈 I can't hear anyone else">
+    **Most likely cause:** You're deafened, the call audio is muted at the OS level, or your audio output device isn't set correctly.
+
+    **Try:**
+    1. Check if you're deafened (different from muted, look for the deafen indicator)
+    2. Check your system volume and make sure the browser isn't muted
+    3. Verify the correct audio output device is set (headphones vs. speakers) in your OS settings
+    4. Right-click the browser volume in your OS's sound mixer and ensure it's not muted
+  </Accordion>
+  <Accordion title="📹 My camera isn't working or appears black">
+    **Most likely cause:** Camera not permitted, hardware conflict, or driver issue.
+
+    **Try:**
+    1. Check browser camera permissions (allow, not block)
+    2. Close other apps that might be using the camera (Zoom, Teams, etc.)
+    3. Refresh the page
+    4. Try a different browser
+    5. For the black screen issue specifically: if you're gaming, try sharing a window instead of full screen, some games conflict with screen capture APIs
+    6. Disable hardware acceleration in your browser if the camera feed appears black
+  </Accordion>
+  <Accordion title="🔊 My voice sounds robotic or choppy">
+    **Most likely cause:** Noise suppression being too aggressive, packet loss on your network, or low microphone quality.
+
+    **Try:**
+    1. Switch from WiFi to a wired connection
+    2. Close bandwidth-heavy apps (streaming, large downloads)
+    3. Speak at a normal volume rather than very softly
+    4. Try moving closer to your router
+  </Accordion>
+  <Accordion title="🔁 There's echo in the call">
+    **Most likely cause:** Using speakers instead of headphones, which causes your mic to pick up the audio output.
+
+    **Fix:** Use headphones! Even basic earbuds will eliminate echo. If you must use speakers, reduce their volume or move your microphone away from them.
+  </Accordion>
+  <Accordion title="⚡ The call keeps cutting out or reconnecting">
+    **Most likely cause:** Unstable internet connection.
+
+    **Try:**
+    1. Switch to wired internet if possible
+    2. Restart your router
+    3. Close bandwidth-heavy apps
+    4. Check if other people in the call are also experiencing drops (might be a server-side issue)
+    5. Check Tavrn's status page for any known outages
+  </Accordion>
+  <Accordion title="🖥️ My screen share appears black to others">
+    **Most likely cause:** Hardware acceleration or GPU-based rendering conflicts.
+
+    **Try:**
+    1. Use window sharing instead of full screen sharing
+    2. In your game, switch to windowed or borderless window mode instead of exclusive fullscreen
+    3. Disable hardware acceleration in your browser (Settings → Advanced → Hardware Acceleration)
+    4. Try sharing a different window to isolate the issue
+  </Accordion>
+  <Accordion title="📞 I'm getting an incoming call sound but no one is calling me">
+    This could be a stale notification. Try refreshing the page. If it persists, check your notification settings.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Browser Compatibility
+
+For the best call experience, use one of these browsers:
+
+| Browser | Voice | Video | Screen Share | System Audio |
+|---|:---:|:---:|:---:|:---:|
+| Chrome / Chromium | ✅ | ✅ | ✅ | ✅ |
+| Edge | ✅ | ✅ | ✅ | ✅ |
+| Firefox | ✅ | ✅ | ✅ | ⚠️ Limited |
+| Safari | ✅ | ✅ | ⚠️ Limited | ❌ |
+| Mobile Chrome (Android) | ✅ | ✅ | ⚠️ Limited | ❌ |
+| Mobile Safari (iOS) | ✅ | ✅ | ❌ | ❌ |
+
+<Note>
+  For the full feature set including system audio in screen shares, Chrome or Edge on desktop gives you the most complete experience.
+</Note>
+
+---
+
+## Still Not Working?
+
+If you've tried everything above and calls still aren't working, here are a few more things to try:
+
+1. **Clear your browser cache and cookies**, Settings → Privacy & Safety → Clear Browsing Data
+2. **Try an incognito/private window**, Rules out extensions interfering
+3. **Try a different device**, Isolates whether it's a device-specific issue
+4. **Check your firewall or VPN**, Some VPNs or corporate firewalls block WebRTC connections needed for calls
+
+If none of the above helps, reach out to the Tavrn community or support and describe what you're experiencing, include your browser, OS, and what exactly is happening.

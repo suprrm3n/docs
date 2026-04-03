@@ -1,0 +1,128 @@
+---
+title: "Troubleshooting Common Issues"
+description: "Solutions for the most frequently encountered problems on Tavrn."
+icon: "life-buoy"
+---
+
+# Troubleshooting Common Issues
+
+Something not working right? Here's a collection of the most common issues and how to fix them.
+
+---
+
+## Before You Try Anything Else
+
+Most Tavrn problems are solved by one of three things:
+
+1. **Refresh the page** (`Ctrl+R` or `Cmd+R`)
+2. **Clear your browser cache**, Settings → Privacy & Safety → Clear Browsing Data
+3. **Try a different browser**, Chrome/Edge tend to work best
+
+If one of these fixes your issue, you don't need to read the rest of this page.
+
+---
+
+## Common Issues
+
+<AccordionGroup>
+  <Accordion title="I can't log in">
+    **Check your credentials.** Caps Lock might be on, or you might be using the wrong email.
+    
+    **Forgot your password?** Click "Forgot Password" on the login page and reset via email.
+    
+    **2FA code not working?** Make sure your device clock is accurate (TOTP is time-sensitive). If you've lost access to your authenticator, use a backup code.
+    
+    **Steam login failing?** Try logging into Steam in your browser first, then try the Steam login button.
+    
+    **Account suspended?** You'll see a message indicating this. Contact support if you believe it was in error.
+  </Accordion>
+
+  <Accordion title="Messages aren't sending">
+    **Check your internet connection.** Messaging requires a stable connection.
+    
+    **Try refreshing.** Real-time connections sometimes need a refresh to reconnect.
+    
+    **Check if you're in a room you've been removed from.** If you were kicked from a room, you won't be able to send messages there.
+    
+    **DM settings blocked?** If you're trying to DM someone and can't, their DM privacy might be set to restrict messages from non-friends.
+  </Accordion>
+
+  <Accordion title="I'm not receiving notifications">
+    **Check the master toggle.** Settings → Notifications should be turned on.
+    
+    **Check browser permissions.** Click the 🔒 lock in the address bar and ensure notifications are set to "Allow."
+    
+    **Check per-channel settings.** Individual room channels can be muted (set to "Nothing"). Right-click the channel and check notification settings.
+    
+    **On mobile?** You may need to add Tavrn to your home screen and enable notifications at the OS level.
+  </Accordion>
+
+  <Accordion title="Voice/video call isn't working">
+    This has its own dedicated guide: [Troubleshooting Calls →](/voice-and-video/troubleshooting-calls)
+    
+    Quick summary: check microphone/camera permissions in your browser, close other apps using those devices, and try a different browser.
+  </Accordion>
+
+  <Accordion title="Images or files won't upload">
+    **Check the file type.** Supported image types: JPEG, PNG, WebP, GIF, AVIF. Supported audio types: MP3, WAV, OGG, WebM, AAC, FLAC, M4A.
+    
+    **Check the file size.** Images: 25MB max. Audio: 50MB max.
+    
+    **Check your internet.** Large file uploads need a stable connection. Try a smaller test file to isolate if it's a size/type issue or a connectivity issue.
+  </Accordion>
+
+  <Accordion title="The page looks broken or isn't loading correctly">
+    **Hard refresh.** `Ctrl+Shift+R` (Windows/Linux) or `Cmd+Shift+R` (Mac) forces a fresh load ignoring cache.
+    
+    **Disable browser extensions.** Ad blockers and other extensions sometimes interfere with web apps. Try an incognito/private window (which disables extensions by default) to see if that's the cause.
+    
+    **Try a different browser.** Confirms whether it's a browser-specific issue.
+  </Accordion>
+
+  <Accordion title="My profile changes aren't saving">
+    **Check for error messages**, there might be a validation issue (e.g., an invalid hex code for your banner color).
+    
+    **Try refreshing and making the change again.** Occasionally a session hiccup can prevent saves.
+    
+    **Check your internet connection.** Profile saves require sending data to Tavrn's servers.
+  </Accordion>
+
+  <Accordion title="Someone I blocked is still appearing in my feed">
+    Blocking hides a user's content where Tavrn can apply it, but in rooms you both belong to, some edge cases might exist. If you're consistently seeing content from a blocked user that you shouldn't, that's worth reporting as a bug.
+  </Accordion>
+
+  <Accordion title="I'm getting duplicate notifications">
+    Try refreshing. If it's persistent across sessions, check if you have Tavrn open in multiple browser tabs, both may be triggering notifications simultaneously.
+  </Accordion>
+
+  <Accordion title="Tavrn is very slow">
+    **Check your internet connection.** A speed test at fast.com can confirm.
+    
+    **Close other tabs/apps**, Tavrn is a real-time app and competes for bandwidth.
+    
+    **Try a different browser**, Chrome and Edge tend to be the most performant for web apps.
+    
+    **Clear browser cache**, Old cached data can sometimes slow things down.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Still Stuck?
+
+If none of the above solved your issue:
+
+1. **Check if it's happening to others**, Ask in a Tavrn room if others are experiencing the same thing. A platform-wide issue isn't something you can fix on your end.
+2. **Describe the problem clearly**, Note what you were doing when it happened, what browser and OS you're on, and any error messages you see.
+3. **Reach out to Tavrn support**, With that info in hand, support can help diagnose what's going on.
+
+---
+
+## Known Limitations
+
+A few things that aren't bugs, just current limitations:
+
+- Screen sharing on iOS Safari is not supported
+- System audio sharing during screen share is limited on Firefox and not available on Safari
+- Animated avatars require an active Cocoa subscription
+- Push notifications require browser permission and may not work on all mobile browsers

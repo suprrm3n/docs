@@ -1,0 +1,101 @@
+---
+title: "Signing In with Steam"
+description: "How Steam login works on Tavrn, setup, benefits, and what to do when things go wrong."
+icon: "gamepad-2"
+---
+
+# Signing In with Steam
+
+If you have a Steam account, you can use it to sign into Tavrn, no email and password required. Here's everything you need to know.
+
+---
+
+## What is Steam Login?
+
+Steam login uses **OAuth**, an industry-standard way for third-party services to authenticate you using your existing Steam identity. Tavrn never sees your Steam password; Steam just tells Tavrn "yes, this is a real, verified Steam user."
+
+It's secure, convenient, and fast.
+
+---
+
+## First-Time Setup: Connecting Steam
+
+<Steps>
+  <Step title="Go to the Tavrn login page">
+    Look for the **Sign in with Steam** button.
+  </Step>
+  <Step title="Click 'Sign in with Steam'">
+    You'll be redirected to Steam's official login page (check the URL, it should be on `steampowered.com`).
+  </Step>
+  <Step title="Log into Steam (if you aren't already)">
+    Enter your Steam credentials. Steam handles this entirely, Tavrn doesn't see your password.
+  </Step>
+  <Step title="Authorize Tavrn">
+    Steam asks you to confirm you want to authorize Tavrn. Click **Authorize**.
+  </Step>
+  <Step title="Complete your Tavrn profile">
+    If this is your first time signing in, you'll be taken through profile setup, choose a username, add a bio, etc. This is the same as regular signup.
+  </Step>
+</Steps>
+
+---
+
+## Returning Users: Logging Back In
+
+Once your Steam account is linked:
+1. Click **Sign in with Steam** on the Tavrn login page
+2. Authorize (Steam may remember your session so this is instant)
+3. You're in
+
+---
+
+## Benefits of Steam Login
+
+- **No password to remember**, Your Steam account handles authentication
+- **Familiar flow**, If you're a gamer, you've done this a hundred times
+- **No email verification**, Steam's identity is already verified
+- **Quick login**, Especially if you stay logged into Steam
+
+---
+
+## Steam Login + Security
+
+Your Tavrn security is directly tied to your Steam account security when using Steam login. Make sure your Steam account is well-protected:
+
+- **Enable Steam Guard** (Steam's 2FA), This is Steam's own two-factor system
+- Use a strong, unique Steam password
+- Don't share your Steam credentials
+
+If your Steam account is compromised, your Tavrn account can be too.
+
+<Warning>
+  Steam's own security hygiene becomes your Tavrn security hygiene when using Steam login. A weak Steam account = a vulnerable Tavrn account.
+</Warning>
+
+---
+
+## Switching Between Steam and Email Login
+
+If you want to also be able to log in with email/password:
+- You may need to set a Tavrn password from **Settings → Security & 2FA**
+- Contact support if you're having trouble associating both methods with the same account
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion title="Can I use Steam login without having a Steam account?">
+    No, you need an existing Steam account. If you don't have one, you can create one for free at store.steampowered.com. You don't need to own any games.
+  </Accordion>
+  <Accordion title="Does Tavrn access my Steam profile, friends, or games?">
+    Tavrn only uses Steam for authentication, it verifies you are who you say you are. It doesn't access your Steam friends list, purchase history, games library, or other Steam data.
+  </Accordion>
+  <Accordion title="I clicked 'Sign in with Steam' and got an error">
+    Try the following: refresh the page and try again, make sure you're logged into Steam in your browser, check that you're authorizing on Steam's actual domain (steampowered.com), try clearing your browser cache and cookies.
+  </Accordion>
+  <Accordion title="Can I disconnect my Steam account later?">
+    If you want to unlink Steam, go to **Settings → Connections** and click **Disconnect** next to Steam. Note that if you signed up exclusively via Steam and haven't set a Tavrn password, you'll want to set one first before disconnecting, otherwise you may have trouble logging back in.
+  </Accordion>
+  <Accordion title="What if my Steam account gets banned by Valve?">
+    A Valve/Steam ban doesn't automatically affect your Tavrn account, Tavrn's platform policies are independent of Steam's. However, if Tavrn can't authenticate you via Steam due to a ban, you'd need an alternative login method to access your account.
+  </Accordion>
+</AccordionGroup>

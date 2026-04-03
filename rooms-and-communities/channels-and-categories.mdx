@@ -1,0 +1,167 @@
+---
+title: "Channels & Categories"
+description: "How text channels, voice channels, and categories work in Tavrn rooms."
+icon: "hash"
+---
+
+# Channels & Categories
+
+Channels are the individual spaces where conversations happen inside a room. Categories organize them. Here's everything you need to know.
+
+---
+
+## Types of Channels
+
+<CardGroup cols={2}>
+  <Card title="# Text Channels" icon="hash">
+    For written conversations. Messages, images, files, GIFs, everything text-based happens here. These are the most common channel type.
+  </Card>
+  <Card title="🔊 Voice Channels" icon="mic">
+    Real-time audio (and optionally video) hangout spaces. You join them like a room, others can see you're in there and join too.
+  </Card>
+  <Card title="📢 Announcement Channels" icon="bell">
+    Like text channels, but one-directional. Only admins can post; everyone else can read and react. Used for important room updates.
+  </Card>
+</CardGroup>
+
+---
+
+## Categories: The Filing System
+
+Categories are folders that group related channels together. They have a title (usually in ALL CAPS by convention) and can be collapsed or expanded.
+
+A well-organized room might look like:
+
+```
+📁 START HERE
+  📌 #rules
+  📢 #announcements
+
+📁 GENERAL
+  # general
+  # off-topic
+  # media
+
+📁 GAMING
+  # lfg (looking for group)
+  # game-clips
+  🔊 Gaming Lounge
+  🔊 Squad Room
+
+📁 COMMUNITY
+  # introductions
+  # suggestions
+```
+
+<Tip>
+  You don't need a category for every channel, but grouping channels logically makes navigation much easier, especially as a room grows.
+</Tip>
+
+---
+
+## Creating Channels (Room Admins)
+
+<Steps>
+  <Step title="Hover over the category where you want the channel">
+    A small **+** icon appears to the right of the category name.
+  </Step>
+  <Step title="Click the + icon">
+    Choose **Text Channel** or **Voice Channel**.
+  </Step>
+  <Step title="Name the channel">
+    Text channel names are lowercase with hyphens: `#game-night`, `#movie-recs`. Voice channels can use any style: `🎮 Gaming Lounge`.
+  </Step>
+  <Step title="Confirm">
+    The channel appears immediately at the bottom of that category.
+  </Step>
+</Steps>
+
+To create a channel outside any category, right-click in the empty space of the channel list.
+
+---
+
+## Creating Categories (Room Admins)
+
+Similar to creating channels:
+1. Right-click in the channel list → **Create Category**
+2. Name it
+3. Drag channels into the new category by clicking and dragging their names
+
+---
+
+## Reordering Channels & Categories
+
+Channels and categories can be freely reordered by **drag and drop**. Grab a channel name and drag it to the position you want. You can move channels between categories the same way.
+
+<Note>
+  Reordering is only available to Admins and the Owner.
+</Note>
+
+---
+
+## Voice Channels: How They Work
+
+Voice channels are always "open", they're just empty until someone joins. When someone's in a voice channel, you'll see their name and avatar listed under the channel name.
+
+**To join a voice channel:** Click its name. You'll instantly join the call.  
+**To leave:** Click the disconnect button at the bottom of the screen (or in the active call bar).
+
+Inside a voice channel you can:
+- Talk (your microphone is live by default, mute if needed)
+- Enable your camera
+- Share your screen
+- See who else is in the call
+
+<Info>
+  For a full guide to voice calls, see the [Voice & Video](/voice-and-video/voice-calls-101) section.
+</Info>
+
+---
+
+## Channel Notifications
+
+By default, you're notified about all messages in channels you're a member of. You can customize this per-channel:
+
+1. Right-click a channel → **Notification Settings**
+2. Choose: **All Messages**, **Only @Mentions**, or **Nothing**
+
+<Tip>
+  For busy channels you're not super active in, setting notifications to "Only @Mentions" keeps things manageable.
+</Tip>
+
+---
+
+## Pinned Messages in Channels
+
+Each channel has a collection of **pinned messages**, important posts that shouldn't get lost in the scroll. Room admins and moderators can pin messages.
+
+To view pinned messages: click the **📌 pin icon** in the channel header.
+
+---
+
+## Archiving vs. Deleting Channels
+
+Currently, channels can be **deleted** by admins (this removes all messages permanently) but not archived. If you want to preserve a channel's content, consider making it read-only (for members) rather than deleting it.
+
+<Warning>
+  Deleting a channel permanently removes all of its message history. This can't be undone.
+</Warning>
+
+---
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion title="Why can't I see some channels?">
+    Channels can be restricted to certain roles. If a channel exists but you can't access it, it's likely for members with an elevated role. Ask an admin if you should have access.
+  </Accordion>
+  <Accordion title="How many channels can a room have?">
+    There's no hard limit, but practically speaking, rooms with too many channels become hard to navigate. Start small and grow as needed.
+  </Accordion>
+  <Accordion title="Can two channels have the same name?">
+    Technically yes, channel names are identified by their internal ID, not just their name. But it's confusing for members, so it's best avoided.
+  </Accordion>
+  <Accordion title="Can members create channels?">
+    No. Only Admins and the Owner can create channels.
+  </Accordion>
+</AccordionGroup>

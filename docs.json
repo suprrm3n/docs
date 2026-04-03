@@ -1,15 +1,118 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Tavrn Support",
+  "appearance": {
+    "default": "light"
+  },
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#ff4500",
+    "light": "#ff6b35",
+    "dark": "#cc3700"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "groups": []
+    "groups": [
+      {
+        "group": "Help center",
+        "pages": ["index"]
+      },
+      {
+        "group": "Getting started",
+        "pages": [
+          "getting-started/what-is-tavrn",
+          "getting-started/creating-your-account",
+          "getting-started/exploring-the-interface",
+          "getting-started/setting-up-your-profile",
+          "getting-started/finding-and-joining-rooms",
+          "getting-started/adding-your-first-friends",
+          "getting-started/your-first-week",
+          "getting-started/tavrn-glossary"
+        ]
+      },
+      {
+        "group": "Messaging",
+        "pages": [
+          "messaging/sending-messages",
+          "messaging/replying-and-quoting",
+          "messaging/reactions-and-emoji",
+          "messaging/message-formatting",
+          "messaging/using-gifs",
+          "messaging/sharing-files-and-media",
+          "messaging/searching-messages"
+        ]
+      },
+      {
+        "group": "Voice and video",
+        "pages": [
+          "voice-and-video/voice-calls-101",
+          "voice-and-video/video-calls",
+          "voice-and-video/screen-sharing",
+          "voice-and-video/call-controls",
+          "voice-and-video/noise-suppression",
+          "voice-and-video/troubleshooting-calls"
+        ]
+      },
+      {
+        "group": "Rooms and communities",
+        "pages": [
+          "rooms-and-communities/what-is-a-room",
+          "rooms-and-communities/creating-a-room",
+          "rooms-and-communities/channels-and-categories",
+          "rooms-and-communities/inviting-members",
+          "rooms-and-communities/roles-and-permissions",
+          "rooms-and-communities/room-settings",
+          "rooms-and-communities/aha-verified-rooms"
+        ]
+      },
+      {
+        "group": "Profile and social",
+        "pages": [
+          "profile-and-social/customizing-your-profile",
+          "profile-and-social/your-profile-url",
+          "profile-and-social/custom-status",
+          "profile-and-social/online-status-and-presence",
+          "profile-and-social/managing-your-friends",
+          "profile-and-social/viewing-other-profiles",
+          "profile-and-social/blocking-someone"
+        ]
+      },
+      {
+        "group": "Privacy and safety",
+        "pages": [
+          "privacy-and-safety/privacy-settings-overview",
+          "privacy-and-safety/profile-visibility",
+          "privacy-and-safety/controlling-who-can-dm-you",
+          "privacy-and-safety/keeping-your-account-secure",
+          "privacy-and-safety/link-safety",
+          "privacy-and-safety/reporting-users-and-content",
+          "privacy-and-safety/community-standards"
+        ]
+      },
+      {
+        "group": "Account and settings",
+        "pages": [
+          "account-and-settings/notification-settings",
+          "account-and-settings/changing-email-or-password",
+          "account-and-settings/two-factor-authentication",
+          "account-and-settings/steam-login",
+          "account-and-settings/managing-multiple-accounts",
+          "account-and-settings/troubleshooting-common-issues"
+        ]
+      },
+      {
+        "group": "Cocoa Premium",
+        "pages": [
+          "cocoa-premium/what-is-cocoa",
+          "cocoa-premium/cocoa-plans-and-pricing",
+          "cocoa-premium/cocoa-perks-explained",
+          "cocoa-premium/managing-your-cocoa",
+          "cocoa-premium/receiving-gifted-cocoa",
+          "cocoa-premium/animated-avatars",
+          "cocoa-premium/cocoa-faq"
+        ]
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -18,33 +121,23 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Go back to Tavrn",
+        "href": "https://tavrn.top/app"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Contact support",
+      "href": "https://tavrn.zohodesk.com/portal/en/newticket"
     }
   },
   "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+    "options": ["copy", "view"]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/tavrnchat",
+      "website": "https://tavrn.top"
     }
   }
 }

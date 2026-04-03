@@ -1,0 +1,124 @@
+---
+title: "Roles & Permissions"
+description: "Understand how roles work in Tavrn rooms and what each role can do."
+icon: "shield"
+---
+
+# Roles & Permissions
+
+Roles are how room owners manage who can do what inside their community. Understanding the role system helps you both as a member and as a room owner.
+
+---
+
+## The Default Role Hierarchy
+
+Tavrn rooms have five built-in roles, from most powerful to least:
+
+<CardGroup cols={1}>
+  <Card title="👑 Owner" icon="crown">
+    **The room creator.** Has complete control over every aspect of the room, settings, channels, members, moderation, and more. Can delete the room. There is only ever one owner per room.
+  </Card>
+  <Card title="🛡️ Admin" icon="shield">
+    **Trusted leaders.** Admins can manage most things, channels, categories, invite links, room settings, roles (below admin), and member management (kick, ban). Can't delete the room or modify other admins.
+  </Card>
+  <Card title="⚔️ Moderator" icon="gavel">
+    **Community keepers.** Moderators can kick members and delete messages. Can't change room settings or manage channels.
+  </Card>
+  <Card title="🤖 TavBot" icon="cpu">
+    **The automated assistant.** TavBot is Tavrn's built-in moderation bot, it has its own role in the member list. Room admins control what TavBot does via the Moderation tab in room settings.
+  </Card>
+  <Card title="🧑 Member" icon="user">
+    **The default role.** Can read and send messages in accessible channels, join voice channels, react to messages, and participate normally. Can't change anything about the room itself.
+  </Card>
+</CardGroup>
+
+---
+
+## Permission Breakdown
+
+Here's a detailed look at what each role can do:
+
+| Action | Member | Moderator | Admin | Owner |
+|---|:---:|:---:|:---:|:---:|
+| Read messages | ✅ | ✅ | ✅ | ✅ |
+| Send messages | ✅ | ✅ | ✅ | ✅ |
+| Join voice channels | ✅ | ✅ | ✅ | ✅ |
+| React to messages | ✅ | ✅ | ✅ | ✅ |
+| Delete own messages | ✅ | ✅ | ✅ | ✅ |
+| Delete others' messages | ❌ | ✅ | ✅ | ✅ |
+| Kick members | ❌ | ✅ | ✅ | ✅ |
+| Ban members | ❌ | ❌ | ✅ | ✅ |
+| Manage channels | ❌ | ❌ | ✅ | ✅ |
+| Manage room settings | ❌ | ❌ | ✅ | ✅ |
+| Create invite links | ❌ | ❌ | ✅ | ✅ |
+| Assign roles (up to own level) | ❌ | ❌ | ✅ | ✅ |
+| Transfer ownership | ❌ | ❌ | ❌ | ✅ |
+| Delete room | ❌ | ❌ | ❌ | ✅ |
+
+---
+
+## Assigning Roles
+
+Only **Admins** and the **Owner** can assign roles to other members.
+
+<Steps>
+  <Step title="Open Room Settings → Members">
+    Navigate to your room settings and find the Members list.
+  </Step>
+  <Step title="Click on a member">
+    Find the member you want to update and click their name.
+  </Step>
+  <Step title="Change their role">
+    Select the new role from the dropdown.
+  </Step>
+  <Step title="Save">
+    Changes take effect immediately.
+  </Step>
+</Steps>
+
+<Note>
+  You can only assign roles at or below your own level. An Admin can make someone a Moderator, but not another Admin. Only the Owner can promote someone to Admin.
+</Note>
+
+---
+
+## Kicking vs. Banning
+
+**Kick**, Removes the member from the room. They can rejoin if they have a valid invite link. Use this for lighter situations or first offenses.
+
+**Ban**, Permanently removes the member and prevents them from rejoining via invite. Use this for serious or repeated violations.
+
+Both actions are logged and visible to admins.
+
+---
+
+## Tips for Room Owners
+
+<AccordionGroup>
+  <Accordion title="How many admins should I have?">
+    Keep the admin team small and trusted. More admins doesn't mean better moderation, it often means more potential for accidental misuse. Start with 1-2 trusted admins and expand if the room grows to need it.
+  </Accordion>
+  <Accordion title="Should I have mods separate from admins?">
+    Yes, for larger rooms. Mods handle the day-to-day (deleting messages, cooling off heated conversations, welcoming members). Admins handle the structure (channels, settings, escalated bans). This division keeps things running smoothly.
+  </Accordion>
+  <Accordion title="What if a moderator is abusing their power?">
+    As owner or admin, you can revoke moderator status at any time. Remove the role in Room Settings → Members.
+  </Accordion>
+  <Accordion title="Can I create custom roles beyond the four defaults?">
+    Currently, Tavrn uses the four standard roles. Custom role creation is a commonly requested feature, stay tuned.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## As a Regular Member: Understanding Your Permissions
+
+If you're a new member of a room and something isn't available to you (you can't see a channel, can't send messages in a specific place, etc.), it's usually because:
+
+1. **You don't have the right role yet**, Ask an admin if this is intentional and if there's a way to get elevated access.
+2. **The channel is restricted**, Some channels are only for certain roles (mods-only, announcements, etc.).
+3. **You haven't been verified**, Some rooms require new members to agree to rules before getting full access.
+
+<Tip>
+  If you join a room and can barely see any channels, look for a **#verify** or **#welcome** channel. Many rooms require new members to agree to rules before unlocking the full community.
+</Tip>

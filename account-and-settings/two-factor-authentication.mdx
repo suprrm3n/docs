@@ -1,0 +1,126 @@
+---
+title: "Two-Factor Authentication"
+description: "How to set up 2FA on your Tavrn account for much stronger security."
+icon: "smartphone"
+---
+
+# Two-Factor Authentication (2FA)
+
+Two-factor authentication (2FA), also called MFA or multi-factor authentication, adds a second lock to your account. Even if someone gets your password, they still can't get in without a code from your device.
+
+It takes about two minutes to set up. Do it.
+
+---
+
+## How It Works
+
+With 2FA enabled, logging in requires two things:
+
+1. **Something you know**, your password
+2. **Something you have**, a time-sensitive code from an authenticator app on your phone or device
+
+An attacker with just your password can't log in without that second factor. This protects you even from data breaches at other sites (if you've reused a password) and phishing attacks.
+
+---
+
+## What Tavrn Uses: TOTP
+
+Tavrn uses **TOTP** (Time-Based One-Time Password) for 2FA. TOTP generates a 6-digit code that changes every 30 seconds. You enter it when logging in.
+
+You'll need a **TOTP authenticator app**. Good options:
+
+| App | Platform | Notes |
+|---|---|---|
+| **Aegis** | Android | Open source, recommended |
+| **Google Authenticator** | iOS / Android | Simple, widely used |
+| **Authy** | iOS / Android | Supports backups |
+| **1Password** | iOS / Android / Desktop | Built-in TOTP if you use 1Password |
+
+---
+
+## Setting Up 2FA
+
+<Steps>
+  <Step title="Go to Settings → Security & 2FA">
+    Find the Two-Factor Authentication section.
+  </Step>
+  <Step title="Click 'Enable 2FA'">
+    Tavrn will generate a QR code for you.
+  </Step>
+  <Step title="Scan the QR code with your authenticator app">
+    Open your authenticator app, tap the + button or "Add account," and scan the QR code displayed in Tavrn.
+
+    If you can't scan the QR code (no camera, desktop only), use the **manual key** shown below the QR code, copy and paste it into your authenticator app.
+  </Step>
+  <Step title="Enter the 6-digit code to verify">
+    Your authenticator app will show a code. Enter it in Tavrn to confirm the setup worked.
+  </Step>
+  <Step title="Done!">
+    2FA is now active. Next time you log in, you'll be prompted for a code from your authenticator app.
+  </Step>
+</Steps>
+
+<Warning>
+  **Important:** The manual key shown during setup is the only backup you have if you lose access to your authenticator app. Write it down and store it somewhere safe, in a password manager, on paper in a secure place, or anywhere only you can access. If you lose it and lose access to your authenticator app, recovery may require contacting support.
+</Warning>
+
+---
+
+## Logging In With 2FA Active
+
+After entering your email and password, Tavrn will prompt you for a **verification code**. Open your authenticator app, find the Tavrn entry, and enter the 6-digit code shown.
+
+Codes refresh every 30 seconds, if one expires while you're typing, just wait for the next one.
+
+---
+
+## Using the Manual Key as a Backup
+
+If you no longer have access to your authenticator app (lost phone, new device, app deleted), your best option is the **manual key** you hopefully saved during setup. You can import this key into a new authenticator app to regenerate your TOTP codes.
+
+If you didn't save the manual key, you'll need to contact Tavrn support for account recovery. See below.
+
+---
+
+## What If I Lose Access to My Authenticator?
+
+If you've lost access to your authenticator app and don't have the manual key saved:
+
+1. Contact **Tavrn support** with proof of account ownership (the email associated with your account, any billing history if you have Cocoa, etc.)
+2. The support team will review your case and may be able to assist with account recovery
+
+This process exists but isn't instant, it's by design. Account recovery that bypasses 2FA needs to be careful to avoid being exploited by attackers.
+
+**The lesson:** Save your manual key during setup. It takes ten seconds and could save you a lot of headache.
+
+---
+
+## Disabling 2FA
+
+If you want to turn off 2FA:
+
+1. **Settings → Security & 2FA → Two-Factor Authentication → Disable**
+2. 2FA is immediately removed from your account
+
+<Note>
+  We strongly recommend against disabling 2FA unless you have a specific reason. If you're switching authenticator apps, you can re-add the account using your saved manual key rather than fully disabling 2FA.
+</Note>
+
+---
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion title="What if the 6-digit code isn't working?">
+    TOTP codes are time-sensitive. Make sure your device's clock is accurate, TOTP depends on synchronized time. If your phone's clock is off by more than ~30 seconds, codes will fail. Enable automatic time sync in your device settings.
+  </Accordion>
+  <Accordion title="Can I use the same authenticator app for multiple Tavrn accounts?">
+    Yes, you can add multiple accounts (each with their own QR code) to the same authenticator app. Each shows up as a separate entry.
+  </Accordion>
+  <Accordion title="Does 2FA affect account switching?">
+    Yes, if you have 2FA on multiple accounts and switch between them, you may be prompted to verify with 2FA depending on the session state.
+  </Accordion>
+  <Accordion title="What if I get a new phone?">
+    Before wiping or losing your old phone, re-add the Tavrn TOTP entry to your new authenticator app using the manual key you saved during setup. If you don't have the key, you'll need to disable 2FA on your old device first (while you still have access) before switching.
+  </Accordion>
+</AccordionGroup>
