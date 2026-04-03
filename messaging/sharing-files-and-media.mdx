@@ -60,7 +60,7 @@ If an upload fails partway through, Tavrn will automatically retry it a few time
 
 ## How Media Displays in Chat
 
-**Images** appear as inline previews, click any image to open it in the **lightbox**, a fullscreen viewer. In the lightbox you can:
+**Images** appear as inline previews — click any image to open it in the **lightbox**, a fullscreen viewer. In the lightbox you can:
 - Navigate between multiple images with the arrow keys or on-screen arrows
 - Close with `Esc` or clicking outside
 
@@ -78,7 +78,7 @@ To open the gallery:
 3. Filter by date or conversation
 
 <Tip>
-  The gallery paginates lazily as you scroll, it loads more as you go, so even a year of shared media won't slow it down.
+  The gallery paginates lazily as you scroll — it loads more as you go, so even a year of shared media won't slow it down.
 </Tip>
 
 ---
@@ -87,12 +87,12 @@ To open the gallery:
 
 Tavrn automatically optimizes images when you upload them:
 
-- **WebP conversion**, Images are converted to WebP format for smaller file sizes with no visible quality loss (with fallback for older browsers)
-- **Dimension extraction**, Image dimensions are stored so previews can be accurately sized before loading
-- **EXIF data stripping**, Any metadata embedded in your photos (including GPS location data!) is automatically removed before the image is stored
+- **WebP conversion** — Images are converted to WebP format for smaller file sizes with no visible quality loss (with fallback for older browsers)
+- **Dimension extraction** — Image dimensions are stored so previews can be accurately sized before loading
+- **EXIF data stripping** — Any metadata embedded in your photos (including GPS location data!) is automatically removed before the image is stored
 
 <Warning>
-  EXIF stripping means that sensitive metadata like your location won't be exposed in shared photos. This happens automatically, you don't need to do anything.
+  EXIF stripping means that sensitive metadata like your location won't be exposed in shared photos. This happens automatically — you don't need to do anything.
 </Warning>
 
 ---
@@ -109,7 +109,7 @@ To download a file someone shared:
 
 Files you share in DMs are only accessible to you and the person you're chatting with. Files shared in room channels are accessible to all members of that channel.
 
-Uploaded files are stored in secure Supabase storage buckets. They're not publicly searchable or indexable.
+Uploaded files are stored in secure storage buckets. They're not publicly searchable or indexable.
 
 ---
 
@@ -117,9 +117,9 @@ Uploaded files are stored in secure Supabase storage buckets. They're not public
 
 If your file is too large:
 
-- **Compress the image**, Use a tool like Squoosh (free, in-browser) to reduce image size
-- **For audio**, Try re-exporting as MP3 at a lower bitrate if FLAC or WAV is too big
-- **Use an external host**, Upload to Google Drive, Dropbox, or Imgur and share the link. Tavrn will auto-generate a link preview.
+- **Compress the image** — Use a tool like Squoosh (free, in-browser) to reduce image size
+- **For audio** — Try re-exporting as MP3 at a lower bitrate if FLAC or WAV is too big
+- **Use an external host** — Upload to Google Drive, Dropbox, or Imgur and share the link. Tavrn will auto-generate a link preview.
 
 ---
 
@@ -127,7 +127,7 @@ If your file is too large:
 
 <AccordionGroup>
   <Accordion title="Can I delete a file I uploaded?">
-    Yes, delete the message that contains the file. This removes both the message and the uploaded attachment from Tavrn's storage.
+    Yes — delete the message that contains the file. This removes both the message and the uploaded attachment from Tavrn's storage.
   </Accordion>
   <Accordion title="Can I upload multiple files at once?">
     Yes! You can select multiple files in the file picker or drag multiple files at once. They'll all queue up and upload together.
@@ -136,6 +136,6 @@ If your file is too large:
     Yes, GIF image files can be uploaded as attachments (up to 25MB). But for sending GIFs from the internet, the GIF picker is way more convenient. See [Using GIFs](/messaging/using-gifs).
   </Accordion>
   <Accordion title="Why did my upload fail?">
-    Usually due to the file being too large, an unsupported file type, or a network issue. Check the file type and size against the limits above. If everything looks right and it's still failing, try again, Tavrn will retry automatically in most cases.
+    Usually due to the file being too large, an unsupported file type, or a network issue. Check the file type and size against the limits above. If everything looks right and it's still failing, try again — Tavrn will retry automatically in most cases.
   </Accordion>
 </AccordionGroup>
