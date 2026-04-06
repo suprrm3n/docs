@@ -139,5 +139,8 @@
       "x": "https://x.com/tavrnchat",
       "website": "https://tavrn.top"
     }
+  },
+  "fonts": {
+    "family": "Open Sans"
   }
 }
