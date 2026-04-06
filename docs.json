@@ -10,7 +10,6 @@
     "light": "#ff6b35",
     "dark": "#cc3700"
   },
-  "favicon": "/favicon.svg",
   "navigation": {
     "groups": [
       {
@@ -142,5 +141,6 @@
   },
   "fonts": {
     "family": "Open Sans"
-  }
+  },
+  "favicon": "/images/Yourparagraphtext(2).png"
 }
