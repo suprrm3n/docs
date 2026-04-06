@@ -142,5 +142,8 @@
   "fonts": {
     "family": "Open Sans"
   },
-  "favicon": "/images/Yourparagraphtext(2).png"
+  "favicon": {
+    "light": "/images/Yourparagraphtext(2).png",
+    "dark": "/images/Yourparagraphtext(2).png"
+  }
 }
