@@ -56,12 +56,12 @@ You'll need a **TOTP authenticator app**. Good options:
     Your authenticator app will show a code. Enter it in Tavrn to confirm the setup worked.
   </Step>
   <Step title="Done!">
-    2FA is now active. Next time you log in, you'll be prompted for a code from your authenticator app.
+    2FA is now active. Save the recovery codes Tavrn shows you, then keep them somewhere secure. Next time you log in, you'll be prompted for a code from your authenticator app.
   </Step>
 </Steps>
 
 <Warning>
-  **Important:** The manual key shown during setup is the only backup you have if you lose access to your authenticator app. Write it down and store it somewhere safe, in a password manager, on paper in a secure place, or anywhere only you can access. If you lose it and lose access to your authenticator app, recovery may require contacting support.
+  **Important:** Save both the manual key and the recovery codes Tavrn shows after setup. Store them separately from your everyday device, such as in a password manager or a secure physical location.
 </Warning>
 
 ---
@@ -74,24 +74,24 @@ Codes refresh every 30 seconds, if one expires while you're typing, just wait fo
 
 ---
 
-## Using the Manual Key as a Backup
+## Keep your recovery material safe
 
-If you no longer have access to your authenticator app (lost phone, new device, app deleted), your best option is the **manual key** you hopefully saved during setup. You can import this key into a new authenticator app to regenerate your TOTP codes.
+If you no longer have access to your authenticator app, you can use the **manual key** you saved during setup to add Tavrn to a new authenticator app. You can also regenerate recovery codes from the Security settings while you still have access to your authenticator.
 
-If you didn't save the manual key, you'll need to contact Tavrn support for account recovery. See below.
+Recovery codes are shown only when they are created. Generating a new set invalidates the previous set.
 
 ---
 
 ## What If I Lose Access to My Authenticator?
 
-If you've lost access to your authenticator app and don't have the manual key saved:
+If you've lost access to your authenticator app and don't have the manual key or recovery codes saved:
 
 1. Contact **Tavrn support** with proof of account ownership (the email associated with your account, any billing history if you have Cocoa, etc.)
 2. The support team will review your case and may be able to assist with account recovery
 
 This process exists but isn't instant, it's by design. Account recovery that bypasses 2FA needs to be careful to avoid being exploited by attackers.
 
-**The lesson:** Save your manual key during setup. It takes ten seconds and could save you a lot of headache.
+**The lesson:** Save your manual key and recovery codes during setup. It takes a minute and could save you a lot of headache.
 
 ---
 
@@ -121,6 +121,6 @@ If you want to turn off 2FA:
     Yes, if you have 2FA on multiple accounts and switch between them, you may be prompted to verify with 2FA depending on the session state.
   </Accordion>
   <Accordion title="What if I get a new phone?">
-    Before wiping or losing your old phone, re-add the Tavrn TOTP entry to your new authenticator app using the manual key you saved during setup. If you don't have the key, you'll need to disable 2FA on your old device first (while you still have access) before switching.
+    Before wiping or losing your old phone, add the Tavrn TOTP entry to your new authenticator app with the manual key you saved during setup. If you no longer have that key, regenerate recovery codes and contact support before you lose access to the old device.
   </Accordion>
 </AccordionGroup>

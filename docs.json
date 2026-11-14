@@ -61,6 +61,7 @@
           "rooms-and-communities/inviting-members",
           "rooms-and-communities/roles-and-permissions",
           "rooms-and-communities/room-settings",
+          "rooms-and-communities/room-events",
           "rooms-and-communities/aha-verified-rooms"
         ]
       },
@@ -96,6 +97,8 @@
           "account-and-settings/two-factor-authentication",
           "account-and-settings/steam-login",
           "account-and-settings/managing-multiple-accounts",
+          "account-and-settings/appearance-and-themes",
+          "account-and-settings/desktop-app-and-offline-dms",
           "account-and-settings/troubleshooting-common-issues"
         ]
       },
